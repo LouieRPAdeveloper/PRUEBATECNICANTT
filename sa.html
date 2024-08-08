@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>WEBSITE PROFILE</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+</style>
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-2 mb-0 border-bottom">
+        <a href="sa.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Profiles Station</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          
+          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-moon-fill"></i> Color Blue</a></li>
+        </ul>
+      </header>
+
+      <section id="Services">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-sm-6 mb-3" style="display: flex;">
+               
+              <input type="text" class="form-control" name="name" id="datoEntrada" placeholder="Search a People" required>
+              <button type="button" onclick="enviarDato()" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+</svg>
+              </button>                
+              </div>
+              <div class="col-xl-6 col-sm-6 mb-3">
+              </div>
+            <div class="col-xl-2 col-sm-6 mb-3" >
+              
+              <select id="continentes" class="form-select" aria-label="Default select example">
+                <option selected>Filter by</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+              
+                </div>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-4 mb-2 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-4 shadow-sm">
+                  
+                  <div class="card-body">
+                    <img id="userprofile1" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username1"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span id="correo1"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion1"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero1"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac1"></span></li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-4 shadow-sm">
+                  
+                    <div class="card-body">
+                        <img id="userprofile2" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                        <h3 id="username2"></h3>
+                        <ul class="list-unstyled mt-3 mb-2 text-start">
+                          <li><strong>Correo</strong>: <span id="correo2"></span></li>
+                          <li><strong>Ubicacion</strong>: <span id="ubicacion2"></span></li>
+                          <li><strong>Genero</strong>: <span id="genero2"></span></li>
+                          <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac2"></span></li>
+                        </ul>
+                        
+                      </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-4 shadow-sm">
+                  
+                    <div class="card-body">
+                        <img id="userprofile3" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                        <h3 id="username3"></h3>
+                        <ul class="list-unstyled mt-3 mb-2 text-start">
+                          <li><strong>Correo</strong>: <span id="correo3"></span></li>
+                          <li><strong>Ubicacion</strong>: <span id="ubicacion3"></span></li>
+                          <li><strong>Genero</strong>: <span id="genero3"></span></li>
+                          <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac3"></span></li>
+                        </ul>
+                        
+                      </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-4 shadow-sm">
+                  
+                    <div class="card-body">
+                        <img id="userprofile4" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                        <h3 id="username4"></h3>
+                        <ul class="list-unstyled mt-3 mb-2 text-start">
+                          <li><strong>Correo</strong>: <span id="correo4"></span></li>
+                          <li><strong>Ubicacion</strong>: <span id="ubicacion4"></span></li>
+                          <li><strong>Genero</strong>: <span id="genero4"></span></li>
+                          <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac4"></span></li>
+                        </ul>
+                        
+                      </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-4 shadow-sm">
+                
+                <div class="card-body">
+                    <img id="userprofile5" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username5"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span id="correo5"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion5"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero5"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac5"></span></li>
+                    </ul>
+                    
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-4 shadow-sm">
+                
+                <div class="card-body">
+                    <img id="userprofile6" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username6"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span id="correo6"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion6"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero6"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac6"></span></li>
+                    </ul>
+                    
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-4 shadow-sm">
+                
+                <div class="card-body">
+                    <img id="userprofile7" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username7"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span id="correo7"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion7"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero7"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac7"></span></li>
+                    </ul>
+                    
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-4 shadow-sm">
+                
+                <div class="card-body">
+                    <img id="userprofile8" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username8"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span id="correo8"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion8"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero8"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac8"></span></li>
+                    </ul>
+                    
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-4 shadow-sm">
+                
+                <div class="card-body">
+                    <img id="userprofile9" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username9"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span id="correo9"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion9"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero9"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac9"></span></li>
+                    </ul>
+                    
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-4 shadow-sm">
+                
+                <div class="card-body">
+                    <img id="userprofile10" class="card-title pricing-card-title img-fluid"  style="height: 120px;">
+                    <h3 id="username10"></h3>
+                    <ul class="list-unstyled mt-3 mb-2 text-start">
+                      <li><strong>Correo</strong>: <span  id="correo10"></span></li>
+                      <li><strong>Ubicacion</strong>: <span id="ubicacion10"></span></li>
+                      <li><strong>Genero</strong>: <span id="genero10"></span></li>
+                      <li><strong>Fecha de Nacimiento</strong>: <span id="fechanac10"></span></li>
+                    </ul>
+                    
+                  </div>
+              </div>
+            </div>
+          
+          
+        </div>
+
+      </div>
+      </section>
+
+    <script>
+        console.log("Hola");
+ 
+
+    
+  async function get_data1() {
+    
+    const response1 = await fetch('https://randomuser.me/api/?results=11');
+    const data1 = await response1.json();
+    console.log(data1);
+
+    function nombreuser(i){
+       return data1["results"][i]['name']['first']+' '+data1["results"][i]['name']['last']
+    }
+
+    function genero(i){
+       return data1["results"][i]['gender']
+    }
+
+    function correo(i){
+       return data1["results"][i]['email']
+    }
+
+    function nacimiento(i){
+       return data1["results"][i]['dob']['date']
+    }
+
+    function fotografia(i){
+       return data1["results"][i]['picture']['large']
+    }
+
+    function ubicacion(i){
+       return data1["results"][i]['location']['street']['name'] + ' '+data1["results"][i]['location']['street']['number'] +', '+data1["results"][i]['location']['country']
+    }
+
+    console.log(data1["results"]);
+    console.log(data1["results"][0]);
+    console.log(data1["results"][0]['gender']);
+    console.log(data1["results"][0]['name']['first']);
+    console.log(data1["results"][0]['name']['last']);
+    console.log(data1["results"][0]['email']);
+    console.log(data1["results"][0]['picture']['large']) //foto
+    console.log(data1["results"][0]['location']['street'])
+    console.log(data1["results"][0]['location']['street']['name'])
+    console.log(data1["results"][0]['location']['street']['number'])
+    console.log(data1["results"][0]['location']['city']) 
+    console.log(data1["results"][0]['location']['country'])  
+    console.log(data1["results"][0]['dob']['date']);
+    //console.log(data1["results"]['gender']);
+    //console.log(data1["results"]['name']['first']);
+    //console.log(data1["results"]['name']['lastname']);
+    //console.log(data1["results"]['name']);
+    console.log('gola')
+    console.log(nombreuser(8))
+
+    for (var i = 1; i <=10; i++) {
+      var nombref=nombreuser(i);
+      var generof=genero(i)
+      var correof=correo(i)
+      var nacimientof= nacimiento(i)
+      var fotografiaf= fotografia(i)
+      var ubicacionf= ubicacion(i)
+
+      var fotoWEB = 'userprofile'+i
+      var usernameWEB = 'username'+i
+      var correoWEB = 'correo'+i
+      var generoWEB = 'genero'+i
+      var ubicacionWEB =  'ubicacion'+i
+      var fechaWEB = 'fechanac'+i
+
+      console.log(usernameWEB)
+      console.log("a");
+      console.log(nombref);
+      console.log(generof);
+      console.log(correof);
+      console.log(nacimientof);
+      console.log(fotografiaf)
+      console.log(ubicacionf)
+
+      document.getElementById(fotoWEB).src = fotografia(i);
+      document.getElementById(usernameWEB).innerHTML = nombreuser(i);
+      document.getElementById(correoWEB).innerHTML = correo(i);
+      document.getElementById(generoWEB).innerHTML = genero(i);
+      document.getElementById(ubicacionWEB).innerHTML = ubicacion(i);
+      document.getElementById(fechaWEB).innerHTML = nacimiento(i).slice(0,10);
+
+}
+      
+}
+
+
+    get_data1();
+
+   
+    </script>
+  </body>
+</html>
